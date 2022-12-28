@@ -1,0 +1,200 @@
+
+// ======== about-s3 section start ======\\
+.about-s3 {
+    padding: 0;
+    margin-top: -150px;
+    @media (max-width: 991px) {
+        margin-top: -50px;
+    }
+    @media (max-width: 783px) {
+        margin-top: 0px;
+    }
+    .about-s2-icon {
+        h5 {
+            color: $theme-bg-2;
+        }
+    }
+    .about-img {
+        @media (max-width: 768px) {
+            text-align: center;
+        }
+    }
+}
+.vency-about-wrapper {
+    padding: 57px 70px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 20px 35px 0px rgba(20, 33, 43, 0.05);
+    position: relative;
+    overflow: hidden;
+    @media (max-width:1024px) {
+        padding: 40px 50px;
+    }
+    @media (max-width: 783px) {
+        padding: 40px 0;
+    }
+    @media (max-width: 768px) {
+        padding: 40px 30px;
+    }
+    .vency-shape {
+        position: absolute;
+        right: -150px;
+        bottom: -220px;
+        @media (max-width: 1024px) {
+            right: -200px;
+            bottom: -270px;
+        }
+        @media (max-width: 830px) {
+            right: -200px;
+            bottom: -300px;
+        }
+        @media (max-width: 376px) {
+            right: -200px;
+            bottom: -350px;
+        }
+    }
+}
+
+// ======== about-s3 section end ======\\
+
+
+
+
+
+
+// ========= service-style-03 category start ============\\
+
+.single-service-s3 {
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 35px 0px rgba(20, 33, 43, 0.1);
+    display: flex;
+    align-items: center;
+    padding: 35px 45px;
+    transition: all .3s ease;
+    margin-bottom: 30px;
+    @media (max-width: 1024px) {
+       padding: 30px 25px;
+    }
+    &:hover {
+        background: $theme-bg-2;
+        h4 {
+            color: $white;
+        }
+        p {
+            color: #c6c6c6;
+        }
+    }
+    .service-icon {
+        margin-right: 35px;
+        margin-bottom: 0;
+        transition: all .3s ease;
+        @media (max-width: 1024px) {
+            height: 90px;
+            width: 90px;
+            line-height: 90px;
+        }
+        &:hover {
+            background: $theme-font;
+            i {
+                color: $white;
+            }
+        }
+        i {
+            height: 120px;
+            line-height: 120px;
+            width: 120px;
+            @media (max-width: 1024px) {
+                height: 90px;
+                width: 90px;
+                line-height: 90px;
+            }
+        }
+    }    
+}
+.service-details {
+    h4 {
+        font-size: 29px;
+        font-weight: 700;
+        color: $theme-bg-2;
+        margin-bottom: 18px;
+        transition: all .3s ease;
+        @media (max-width: 1024px) {
+            font-size: 22px;
+        }
+        @media (max-width: 425px) {
+            font-size: 18px;
+        }
+    }
+    p {
+        font-size: 15px;
+        line-height: 27px;
+        color: $content-color-01;
+        margin-bottom: 20px;
+        transition: all .3s ease;
+        @media (max-width: 1024px) {
+            font-size: 13px;
+            line-height: 22px;
+        }
+        @media (max-width: 425px) {
+            font-size: 10px;
+            line-height: 18px;
+        }
+    }
+    .service-btn {
+        background: $white;
+        color: $theme-bg-2;
+        font-weight: 500;
+        border: 1px solid #e3e3e3;
+        transition: .3s;
+        &:hover{
+            background: $theme-font;
+            color: $white;
+            border: 1px solid $theme-font;
+        }
+    }
+}
+
+// ========= service-style-03 category end ============\\
+
+
+
+
+
+
+// ======= skill style-3 section start==========\\
+
+.skill-s3 {
+    background: $theme-bg-2;
+    .about-content {
+        padding-left: 70px;
+        width: 80%;
+        @media (max-width:768px) {
+            padding-left: 40px;
+            width: 100%;
+        }
+        h2 {
+            color: $white;
+        }
+    }
+}
+.skill-wrap-s3 {
+    padding-right: 70px;
+    @media (max-width: 768px) {
+        padding: 0 40px;
+    }
+    .single-skill {
+        .skill-name {
+            h4 {
+                color: $white;
+            }
+        }
+    }
+}
+
+// ======= skill style-3 section start==========\\
+
+
+
+
+

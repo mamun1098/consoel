@@ -1,0 +1,72 @@
+
+///// Footer area start \\\\\\
+
+.single-footer{
+    @media (max-width: 991px) {
+        padding-left: 45px;
+    }
+}
+
+
+.pl-45 {padding-left: 45px;}
+.footer-top {
+    background: $theme-bg-2;
+}
+
+.footer-title {
+    margin-bottom: 40px;
+    h4 {
+        font-size: 25px;
+        line-height: 40px;
+        font-weight: 700;
+        color: $white;
+    }
+}
+.footer-widget {
+    p {
+        font-size: 16px;
+        line-height: 30px;
+        color: $cyan-3;
+        display: block;
+        &:last-child {
+            margin-top: 15px;
+        }
+    }
+    .footer-menu {
+        margin-top: -10px;
+        li {
+            font-size: 16px;
+            line-height: 40px;
+            a {
+                color: $cyan-3;
+                transition: all .3s ease;
+            }
+            &:hover {
+                a {
+                    color: $theme-font;
+                }
+            }
+        }
+    }
+}
+.footer-bottom {
+    background: $theme-bg-3;
+    padding-top: 20px;
+    text-align: center;
+    p {
+        font-size: 16px;
+        line-height: 30px;
+        color: $cyan-3;
+        span {
+            color:  $theme-font;
+        }
+    }
+}
+////////== Footer area end == ///////////
+
+
+
+
+
+
+
