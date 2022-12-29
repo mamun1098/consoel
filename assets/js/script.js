@@ -279,7 +279,7 @@ if ($(".odometer").length) {
 
 
       /*------------------------------------------
-        = portfolio SLIDER
+        = portfolio SLIDER style-01 
     -------------------------------------------*/
     if ($(".portfolo-slider").length) {
       $(".portfolo-slider").owlCarousel({
@@ -327,6 +327,55 @@ if ($(".odometer").length) {
   }
 
 
+
+        /*------------------------------------------
+        = portfolio SLIDER style-02
+    -------------------------------------------*/
+    if ($(".portfolo-active-s3").length) {
+        $(".portfolo-active-s3").owlCarousel({
+          autoplay: false,
+          smartSpeed: 300,
+          center: true,
+          margin: 20,
+          loop:true,
+          autoplayHoverPause:true,
+          dots: false,
+          nav: true,
+          navText: ['<i class="fa fa-long-arrow-left" aria-hidden="true"></i>','<i class="fa fa-long-arrow-right" aria-hidden="true"></i>'],
+            responsive: {
+              0 : {
+                  items: 1,
+                  dots: true,
+                  nav: false,
+                  center: false,
+              },
+  
+              500 : {
+                  items: 1,
+                  nav: false,
+                  center: false,
+              },
+  
+              768 : {
+                  items: 2,
+                  center: false,
+              },
+  
+              991 : {
+                  items: 3,
+                  center: true,
+              },
+              1200 : {
+                  items: 3,
+              },
+  
+              1400 : {
+                  items: 3
+              },
+  
+            }
+        });
+    }
 
       /*------------------------------------------
         = Testimonial slider 1

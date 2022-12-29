@@ -166,6 +166,24 @@
 
 .skill-s3 {
     background: $theme-bg-2;
+    position: relative;
+    .row {
+        margin-top: -70px;
+    }
+    .about-right {
+        position: relative;
+        .skill-shape-01 {
+            position: absolute;
+            bottom: -120px;
+            left: -25%;
+            @media (max-width: 1540px) {
+                left: -15%;
+            }
+            @media (max-width: 1399px) {
+                display: none;
+            }
+        }
+    }
     .about-content {
         padding-left: 70px;
         width: 80%;
@@ -175,6 +193,14 @@
         }
         h2 {
             color: $white;
+        }
+    }
+    .skill-shape-02 {
+        position: absolute;
+        right: 0;
+        top: 40px;
+        @media (max-width:1399px) {
+            display: none;
         }
     }
 }
@@ -192,7 +218,151 @@
     }
 }
 
-// ======= skill style-3 section start==========\\
+// ======= skill style-3 section end==========\\
+
+
+
+
+
+
+
+
+// ============== team style-3 section start=================\\
+
+.team-s3 {
+    background: $cyan-4;
+    position: relative;
+    z-index: 1;
+    .team-shape-01 {
+        position: absolute;
+        left: 0;
+        bottom: -20px;
+        z-index: -1;
+    }
+    .team-shape-02 {
+        position: absolute;
+        right: 0;
+        top: -130px;
+        z-index: -1;
+        @media (max-width: 991px) {
+            display: none;
+        }
+    }
+}
+.team-wrap-s3 {
+    padding: 0;
+    border-radius: 10px;
+    transition: all .3s ease;
+    &:hover {
+        padding: 30px;
+        border: 2px solid $theme-font;
+        @media (max-width: 425px) {
+            padding: 15px;
+        }
+    }
+    .team-img {
+        border-radius: 10px;
+        border: none;
+        img {
+            border-radius: 10px;
+        }
+        .team-text {
+            border-radius: 10px;
+            p {
+                color: $white;
+            }
+        }
+    }
+}
+
+// ============== team style-3 section end=================\\
+
+
+
+
+// -----========== counter s3 start =========------\\
+
+.counter-s3  {
+    padding-bottom: 75px;
+    padding-top: 110px;
+}
+// -----========== counter s3 end =========------\\
+
+
+
+
+// ===portfolio style-03 start ====\\
+
+.portfolio-s3 {
+    .owl-nav {
+        text-align: end;
+        position: absolute;
+        top: -170px;
+        right: 0;
+    }
+    .portfolo-active-s3 {
+        .active.center {
+            .portfolio-img{
+                background: $theme-bg-1;
+            }
+            .portfolio-content-s3 {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.portfolio-wrap-s3 {
+    .vency-portfolio {
+        .portfolio-img {
+            margin-bottom: 30px;
+            padding: 50px 35px;
+            background: $white;
+            transition: .3s;
+            border-radius: 10px;
+            &::before{
+                display: none;
+            }
+            img {
+                height: 235px;
+            }
+        }
+        .portfolio-content-s3{
+            text-align: center;
+            visibility: hidden;
+            opacity: 0;
+            transition: .3s;
+            a {
+                h4 {
+                    font-size: 28px;
+                    color: $white;
+                    margin-bottom: 12px;
+                }
+            }
+            span {
+                font-size: 13px;
+                line-height: 30px;
+                font-weight: 600;
+                letter-spacing: 1.2px;
+                color: $theme-font;
+            }
+        }
+    }
+}
+
+// ===portfolio style-03 end ====\\
+
+
+
+
+
+
+
+
+
+
+
 
 
 
