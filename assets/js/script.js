@@ -351,14 +351,14 @@ if ($(".odometer").length) {
               },
   
               500 : {
-                  items: 1,
+                  items: 2,
                   nav: false,
                   center: false,
               },
   
               768 : {
-                  items: 2,
-                  center: false,
+                  items: 3,
+                  center: true,
               },
   
               991 : {
@@ -412,6 +412,55 @@ if ($(".odometer").length) {
           nav: true,
           navText: ['<i class="fa fa-long-arrow-right" aria-hidden="true"></i>','<i class="fa fa-long-arrow-left" aria-hidden="true"></i>'],
           items: 1,
+        });
+    }
+
+        /*------------------------------------------
+        = testimoni SLIDER style-03
+    -------------------------------------------*/
+    if ($(".testimoni-s3-active").length) {
+        $(".testimoni-s3-active").owlCarousel({
+          autoplay: false,
+          smartSpeed: 300,
+          center: true,
+          margin: 30,
+          loop:true,
+          autoplayHoverPause:true,
+          dots: false,
+          nav: true,
+          navText: ['<i class="fa fa-long-arrow-left" aria-hidden="true"></i>','<i class="fa fa-long-arrow-right" aria-hidden="true"></i>'],
+            responsive: {
+              0 : {
+                  items: 1,
+                  dots: true,
+                  nav: false,
+                  center: false,
+              },
+  
+              500 : {
+                  items: 2,
+                  nav: false,
+                  center: false,
+              },
+  
+              768 : {
+                  items: 2,
+                  center: false,
+              },
+  
+              991 : {
+                  items: 3,
+                  center: true,
+              },
+              1200 : {
+                  items: 3,
+              },
+  
+              1400 : {
+                  items: 3
+              },
+  
+            }
         });
     }
 

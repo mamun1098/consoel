@@ -270,7 +270,14 @@
         }
     }
 }
-
+.hero-style-4 {
+    .slider-inner {
+        &::before {
+            opacity: 0.87;
+            background: #091117;
+        }
+    }
+}
 
 .hero-img {
     position: absolute;
