@@ -711,6 +711,56 @@
 // portfolio section start 
 .portfolio {
     background: $theme-bg-2;
+    position: relative;
+    overflow: hidden;
+    .portfolio-shape01 {
+        position: absolute;
+        bottom: -35%;
+        left: -19%;
+        @media (max-width: 1620px) {
+            bottom: -40%;
+            left: -30%;
+        }
+        @media (max-width: 1420px) {
+            bottom: -40%;
+            left: -40%;
+        }
+        @media (max-width: 1220px) {
+            bottom: -10%;
+            left: -57%;
+        }
+        @media (max-width: 900px) {
+           display: none;
+        }
+    }
+    .portfolio-shape02{
+        position: absolute;
+        top: -40%;
+        right: -29%;
+        @media (max-width: 1600px) {
+            top: -20%;
+            right: -40%;
+        }
+        @media (max-width: 1450px) {
+            top: -20%;
+            right: -50%;
+        }
+        @media (max-width: 1260px) {
+            top: -20%;
+            right: -70%;
+        }
+        @media (max-width: 1260px) {
+            top: -50%;
+            right: -70%;
+        }
+        @media (max-width: 1040px) {
+            top: -50%;
+            right: -80%;
+        }
+        @media (max-width: 900px) {
+           display: none;
+        }
+    }
     .owl-nav {
         text-align: center;
         button {
