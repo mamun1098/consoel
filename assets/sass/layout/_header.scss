@@ -271,6 +271,7 @@
             top: 90%;
             text-align: start;
             left: 0;
+            width: 200px;
             visibility: hidden;
             opacity: 0;
             transition: all .3s ease;
@@ -284,13 +285,13 @@
                 text-align: center;
             }
             li {
-                padding: 10px 10px;
-                width: 150px;
+                padding: 10px 25px;
                 @media (max-width: 991px) {
                     width: unset;
                 }
                 a {
                     font-size: 16px;
+                    font-weight: 500;
                 }
             }
         }
