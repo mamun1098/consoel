@@ -556,24 +556,12 @@ img {
   border: 1px solid #fff;
 }
 
-.menu-bg-1 {
-  background: rgba(22, 53, 74, 0.5);
+.header-top-s5 {
+  border-bottom: 1px solid #e9e9e9;
 }
 
-.menu-bg-2 {
-  background: #fff;
-  margin-top: 50px;
-}
-@media (max-width: 499px) {
-  .menu-bg-2 {
-    margin-top: 70px;
-  }
-}
-.menu-bg-2 .menu li .submenu {
-  background: #fff;
-}
-.menu-bg-2 .menu li a {
-  color: #1a384c;
+.header-top-s6 {
+  background: #14212b;
 }
 
 .header-style-1 {
@@ -607,6 +595,36 @@ img {
   background: rgba(255, 255, 255, 0.1);
 }
 
+.menu-bg-1 {
+  background: rgba(22, 53, 74, 0.5);
+}
+
+.menu-bg-2 {
+  background: #fff;
+  margin-top: 50px;
+}
+@media (max-width: 499px) {
+  .menu-bg-2 {
+    margin-top: 70px;
+  }
+}
+.menu-bg-2 .menu li .submenu {
+  background: #fff;
+}
+.menu-bg-2 .menu li a {
+  color: #1a384c;
+}
+
+.menu-bg-5 {
+  background: #fff;
+}
+.menu-bg-5 .menu li a {
+  color: #14212b;
+}
+.menu-bg-5 .menu li .submenu {
+  background: #fff;
+}
+
 .menu {
   display: flex;
   align-items: center;
@@ -638,7 +656,8 @@ img {
   .menu li .submenu {
     position: static;
     background: transparent;
-    margin-left: 30px;
+    margin-left: 15px;
+    width: 100%;
     visibility: visible;
     opacity: 1;
     text-align: center;
@@ -784,6 +803,29 @@ img {
   align-items: center;
   position: relative;
 }
+.hero-style-1 .slick-dots {
+  bottom: 150px;
+}
+@media (max-width: 1101px) {
+  .hero-style-1 .slick-dots {
+    bottom: 0px;
+  }
+}
+.hero-style-1 .slick-dots li {
+  height: 10px;
+  width: 10px;
+  background: #fff;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+.hero-style-1 .slick-dots li button::before {
+  display: none;
+}
+.hero-style-1 .slick-dots .slick-active {
+  width: 30px;
+  background: #ff4a17;
+  border-radius: 5px;
+}
 @media (max-width: 991px) {
   .hero-style-1 {
     height: 700px;
@@ -792,6 +834,32 @@ img {
 @media (max-width: 576px) {
   .hero-style-1 {
     height: 600px;
+  }
+}
+.hero-style-1 .slider-inner {
+  height: 1000px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  position: relative;
+}
+@media (max-width: 1100px) {
+  .hero-style-1 .slider-inner {
+    height: 700px;
+  }
+}
+@media (max-width: 768px) {
+  .hero-style-1 .slider-inner {
+    height: 600px;
+  }
+}
+@media (max-width: 600px) {
+  .hero-style-1 .slider-inner {
+    height: 550px;
   }
 }
 .hero-style-1 .hero-img {
@@ -811,6 +879,9 @@ img {
   width: 100%;
   position: relative;
   z-index: 1;
+}
+.hero-style-2 .slick-dots {
+  display: none;
 }
 @media (max-width: 1100px) {
   .hero-style-2 {
@@ -880,9 +951,47 @@ img {
     height: 600px;
   }
 }
+.hero-style-3 .hero-img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 50%;
+}
+@media (max-width: 576px) {
+  .hero-style-3 .hero-img {
+    display: none;
+  }
+}
+.hero-style-3 .slick-dots {
+  bottom: -30px;
+}
+.hero-style-3 .slick-dots li {
+  height: 10px;
+  width: 10px;
+  background: #fff;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+.hero-style-3 .slick-dots li button::before {
+  display: none;
+}
+.hero-style-3 .slick-dots .slick-active {
+  width: 30px;
+  background: #ff4a17;
+  border-radius: 5px;
+}
 
 .hero-style-4 {
   height: 900px;
+}
+.hero-style-4 .slick-dots {
+  display: none;
+}
+.hero-style-4 .slick-dots li button {
+  display: none;
+}
+.hero-style-4 .slick-dots li.slick-active::before {
+  position: unset;
 }
 @media (max-width: 1100px) {
   .hero-style-4 {
@@ -1069,14 +1178,12 @@ img {
   }
 }
 
-@media (max-width: 576px) {
-  .hero-content {
-    width: 150%;
-  }
+.hero-content {
+  width: 50%;
 }
 @media (max-width: 576px) {
   .hero-content {
-    width: 180%;
+    width: 90%;
   }
 }
 .hero-content span {
@@ -1352,6 +1459,26 @@ img {
   }
 }
 
+.hero-style-4 .slick-dots,
+.hero-style-2 .slick-dots,
+.hero-style-2 .slick-dots {
+  display: none;
+}
+.hero-style-4 .slick-dots li button,
+.hero-style-2 .slick-dots li button,
+.hero-style-2 .slick-dots li button {
+  display: none;
+}
+.hero-style-4 .slick-dots li.slick-active::before,
+.hero-style-2 .slick-dots li.slick-active::before,
+.hero-style-2 .slick-dots li.slick-active::before {
+  position: unset;
+}
+
+.slide-caption > div {
+  overflow: hidden;
+}
+
 .slide-caption > div * {
   -webkit-animation: fadeOutLeft 1.5s both;
   animation: fadeOutLeft 1.5s both;
@@ -1413,8 +1540,8 @@ img {
 }
 
 .swiper-wrapper .slick-current .slide-caption > div.hero-img * {
-  -webkit-animation-delay: 2s;
-  animation-delay: 2;
+  -webkit-animation-delay: 2.5s;
+  animation-delay: 2.5s;
 }
 
 .about {
