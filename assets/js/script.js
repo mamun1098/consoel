@@ -3,10 +3,10 @@
 // sticky menu start 
 $(window).on('scroll',function() {    
     var scroll = $(window).scrollTop();
-    if (scroll < 245) {
-     $(".header-middle").removeClass("scroll-header");
+    if (scroll < 2) {
+     $(".sticky-menu").removeClass("scroll-header");
     }else{
-     $(".header-middle").addClass("scroll-header");
+     $(".sticky-menu").addClass("scroll-header");
     }
    });
    

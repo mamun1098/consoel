@@ -16,6 +16,12 @@
 }
 .about-left {
     position: relative;
+    @media (max-width: 768px) {
+        margin: 0 50px;
+    }
+    @media (max-width: 468px) {
+        margin: 0 10px;
+    }
     .about-img {
         position: relative;
         img {
@@ -106,6 +112,12 @@
     @media (max-width: 991px) {
         padding-left: 20px;           
     }
+    @media (max-width: 768px) {
+        margin: 0 30px;
+    }
+    @media (max-width: 468px) {
+        margin: 0;
+    }
     .headline {
         color: $theme-font;
         font-size: 21px;
@@ -160,6 +172,39 @@
     }
 
 }
+
+
+// style-6 css start 
+
+.video-img {
+    position: absolute;
+    padding: 21px;
+    background: rgb(255, 74, 23, 0.4);
+    border-radius: 50%;
+    right: 50px;
+    bottom: 50px;
+    @media (max-width: 1100px) {
+        right: 30px;
+        bottom: 30px;
+    }
+    @media (max-width: 850px) {
+        right: 20px;
+        bottom: 20px;
+        padding: 15px;
+        width: 50%;
+    }
+    @media (max-width: 768px) {
+        width: 30%;
+    }
+    @media (max-width: 450px) {
+        width: 35%;
+        padding: 10px;
+    }
+    
+}
+
+// style-6 css end 
+
 
 
 // service section start 

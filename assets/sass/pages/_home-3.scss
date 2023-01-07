@@ -3,6 +3,7 @@
 .about-s3 {
     padding: 0;
     margin-top: -150px;
+    z-index: 1;
     @media (max-width: 991px) {
         margin-top: -50px;
     }
@@ -73,6 +74,8 @@
     padding: 35px 45px;
     transition: all .3s ease;
     margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
     @media (max-width: 1024px) {
        padding: 30px 25px;
     }
@@ -110,7 +113,39 @@
                 line-height: 90px;
             }
         }
-    }    
+    }
+
+    .s3-shape01 {
+        position: absolute;
+        left: -5%;
+        top: -1%;
+        @media (max-width: 1030px) {
+            left: -15%;
+        }
+        @media (max-width: 425px) {
+            left: -18%;
+        }
+    }
+    .s3-shape02 {
+        position: absolute;
+        right: -5%;
+        bottom: -1%;
+        @media (max-width: 920px) {
+            right: -15%;
+        }
+        @media (max-width: 840px) {
+            right: -20%;
+            bottom: -8%;
+        }
+        @media (max-width: 768px) {
+            right: -3%;
+            bottom: -12%;
+        }
+        @media (max-width: 380px) {
+            right: -35%;
+            bottom: -6%;
+        }
+    }
 }
 .service-details {
     h4 {
@@ -120,7 +155,7 @@
         margin-bottom: 18px;
         transition: all .3s ease;
         @media (max-width: 1024px) {
-            font-size: 22px;
+            font-size: 20px;
         }
         @media (max-width: 425px) {
             font-size: 18px;
@@ -254,6 +289,7 @@
     background: $cyan-4;
     position: relative;
     z-index: 1;
+    overflow: hidden;
     .team-shape-01 {
         position: absolute;
         left: 0;
