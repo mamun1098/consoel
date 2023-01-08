@@ -708,6 +708,10 @@
         }
         .subscribe-btn{
             background: $theme-bg-2;
+            transition: all .3s ease;
+            &:hover {
+                background: $theme-font;
+            }
         }
     }
 }
