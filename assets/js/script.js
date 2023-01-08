@@ -396,7 +396,7 @@ if ($(".odometer").length) {
           asNavFor: '.slider-for',
           focusOnSelect: true,
           dots:true,
-
+          arrows: false,
       });
   }
 

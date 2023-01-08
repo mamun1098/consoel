@@ -2642,6 +2642,7 @@ img {
 
 .testimoni .slick-dots {
   text-align: start;
+  display: flex;
 }
 @media (max-width: 768px) {
   .testimoni .slick-dots {
