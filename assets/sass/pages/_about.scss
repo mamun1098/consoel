@@ -53,24 +53,23 @@
             font-weight: 600;
             color: $theme-font;
             margin-top: -18px;
-            position: relative;
             @media (max-width: 600px) {
                 font-size: 15px;
                 line-height: 70px;
             }
-            &::after {
-                content: "";
-                position: absolute;
-                height: 2px;
-                width: 6px;
-                background: #fff;
-                left: 50%;
-                transform: translateX(-50%);
-                top: 50%;
-            }
             a {
                 color: $white;
-                margin-right: 25px;
+                margin-right: 20px;
+                position: relative;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    height: 2px;
+                    width: 6px;
+                    background: #fff;
+                    right: -15px;
+                    top: 50%;
+                }
             }
         }
     }

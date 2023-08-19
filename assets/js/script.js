@@ -8,7 +8,7 @@ $(window).on('scroll',function() {
     }else{
      $(".sticky-menu").addClass("scroll-header");
     }
-   });
+});
    
    
      var nav_offset_top = $('header').height()+10; 
@@ -90,7 +90,7 @@ $(window).on('scroll',function() {
 // mobile menu 
 $(".mobile-btn").click(function(){
     $(".responsive-menu").toggleClass("active");
-  });
+});
 
 
 
@@ -512,6 +512,52 @@ if ($(".odometer").length) {
             }
         });
     }
+
+
+
+
+    // $('.gallarys').magnificPopup({
+    //     type: 'image',
+    //     gallery : {
+    //       enabled:true
+    //     }
+    //     // other options
+    //   });
+
+
+
+
+
+    /*-----------------------
+       cart-plus-minus-button 
+     -------------------------*/
+     $(".cart-plus-minus").append('<div class="dec qtybutton">-</div><div class="inc qtybutton">+</div>');
+     $(".qtybutton").on("click", function () {
+         var $button = $(this);
+         var oldValue = $button.parent().find("input").val();
+         if ($button.text() == "+") {
+             var newVal = parseFloat(oldValue) + 1;
+         } else {
+             // Don't allow decrementing below zero
+             if (oldValue > 0) {
+                 var newVal = parseFloat(oldValue) - 1;
+             } else {
+                 newVal = 0;
+             }
+         }
+         $button.parent().find("input").val(newVal);
+     });
+ 
+
+    // tooltips
+
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+
+
+
 
 
 
