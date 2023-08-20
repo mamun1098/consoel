@@ -3,10 +3,10 @@
 
 ## Mac or Linux users
 
-# Installing Acorn with Composer
+### Installing Acorn with Composer
     $ composer require roots/acorn
 
-# Globally install Yarn
+### Globally install Yarn
     $ npm install --global yarn
 
 Install Sage using Composer from your WordPress themes directory (replace your-theme-name below with the name of your theme):
