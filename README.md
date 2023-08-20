@@ -1,10 +1,19 @@
 
 ### Sage Installation
 
+## Mac or Linux users
 
-## Getting Started
+# Installing Acorn with Composer
+    $ composer require roots/acorn
 
-<h3>Windows users</h3>
+# Globally install Yarn
+    $ npm install --global yarn
+
+Install Sage using Composer from your WordPress themes directory (replace your-theme-name below with the name of your theme):
+
+
+## Windows users
+
 WSL is required in order to use Sage. Build commands must be ran from a  <a href="https://docs.microsoft.com/en-us/windows/wsl/">WSL environment</a>
 
 
