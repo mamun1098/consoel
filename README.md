@@ -35,9 +35,9 @@ WSL is required in order to use Sage. Build commands must be ran from a  <a href
 
 #### Using WSL (Windows Subsystem for Linux), you can install Sage using the following command:
 
- $ sudo apt install composer yarn
+    $ sudo apt install composer yarn
 
- $ composer create-project roots/sage your-theme-name
+ <!-- $ composer create-project roots/sage your-theme-name -->
 
 ## Run yarn from the theme directory to install dependencies
  3.  $ npm install 
