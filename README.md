@@ -4,7 +4,7 @@
 
 ## Getting Started
 
-<h6>Windows users</h6>
+<h3>Windows users</h3>
 WSL is required in order to use Sage. Build commands must be ran from a  <a href="https://docs.microsoft.com/en-us/windows/wsl/">WSL environment</a>
 
 
@@ -23,12 +23,12 @@ WSL is required in order to use Sage. Build commands must be ran from a  <a href
 
 ## We also recommend adding Acorn's postAutoloadDump function to Composer's post-autoload-dump event in the scripts section of composer.json:
 
-<p>"scripts": {</p>
-    <p>//...</p>
-    <p>"post-autoload-dump": [</p>
-        <p>"Roots\\Acorn\\ComposerScripts::postAutoloadDump"</p>
-    <p>]</p>
-<p>}</p>
+"scripts": {
+  //...
+  "post-autoload-dump": [
+    "Roots\\Acorn\\ComposerScripts::postAutoloadDump"
+  ]
+}
 
 
 
