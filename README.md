@@ -1,5 +1,4 @@
-
-### Sage Installation
+<h2 align="center">Sage Installation</h2>
 
 ## Mac or Linux users
 
