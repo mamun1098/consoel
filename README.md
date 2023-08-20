@@ -12,13 +12,26 @@
 #### Install Sage using Composer from your WordPress themes directory (replace your-theme-name below with the name of your theme):
     $ composer create-project roots/sage your-theme-name
 
+#### To install the latest development version of Sage, add dev-main to the end of the command:
+    $ composer create-project roots/sage your-theme-name dev-main
+
+## Build assets
+#### You must build theme assets in order to access your site. Failing to build the assets will result in the error:
+    The manifest [/path/to/sage/public/manifest.json] cannot be found.
+
+## Running the first build
+
+
+
+
+
 
 ## Windows users
 
 WSL is required in order to use Sage. Build commands must be ran from a  <a href="https://docs.microsoft.com/en-us/windows/wsl/">WSL environment</a>
 
 
-## Using WSL (Windows Subsystem for Linux), you can install Sage using the following command:
+#### Using WSL (Windows Subsystem for Linux), you can install Sage using the following command:
 
 1. $ sudo apt install composer yarn
 2. $ composer create-project roots/sage your-theme-name
