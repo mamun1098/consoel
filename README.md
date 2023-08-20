@@ -9,7 +9,8 @@
 ### Globally install Yarn
     $ npm install --global yarn
 
-Install Sage using Composer from your WordPress themes directory (replace your-theme-name below with the name of your theme):
+#### Install Sage using Composer from your WordPress themes directory (replace your-theme-name below with the name of your theme):
+    $ composer create-project roots/sage your-theme-name
 
 
 ## Windows users
