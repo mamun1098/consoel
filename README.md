@@ -14,21 +14,23 @@ WSL is required in order to use Sage. Build commands must be ran from a  <a href
 2. $ composer create-project roots/sage your-theme-name
 
 ## Run yarn from the theme directory to install dependencies
- 3.  $ yarn install
- 4.  $ yarn build
- 5.  $ npm install
+ 3.  $ npm install 
+ 4.  $ yarn install
+ 5.  $ yarn build 
 
 ## Installing Acorn
  6.  $ composer require roots/acorn
 
 ## We also recommend adding Acorn's postAutoloadDump function to Composer's post-autoload-dump event in the scripts section of composer.json:
 
-"scripts": {
+<p>
+ "scripts": {
   //...
   "post-autoload-dump": [
     "Roots\\Acorn\\ComposerScripts::postAutoloadDump"
   ]
 }
+</p>
 
 
 
